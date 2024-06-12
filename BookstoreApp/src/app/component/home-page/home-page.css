@@ -1,0 +1,43 @@
+mat-card{
+    background-color: #10a76d;
+    color:gainsboro;
+
+}
+
+mat-card-subtitle{
+    color:gainsboro;
+}
+
+img{
+    width: 250px;
+    height: 400px;
+}
+
+table{
+    background-color: #10a76d;
+
+}
+
+input{
+    width: 200px;
+    height: 20px;
+}
+
+a{
+    color:grey
+}
+a:hover{
+    color:darkgray;
+
+}
+
+.tekst {
+  font-size: 15px;
+  justify-content: center;
+}
+#slike{
+  border-radius: 8px;
+}
+
+
+

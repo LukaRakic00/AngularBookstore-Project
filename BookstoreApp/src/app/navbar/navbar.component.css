@@ -1,0 +1,120 @@
+.mat-toolbar.mat-primary {
+    top: auto;
+    left: 0px;
+    width: auto;
+    height: 60px;
+    background: #10a76d;
+    color: #fff;
+  }
+
+ .toolbar-text {
+   margin-left: 10px;
+   top: 17px;
+   left: 201px;
+   width: 91px;
+   height: 26px;
+   text-align: left;
+   font: normal normal normal 20px/26px Roboto;
+   letter-spacing: 0px;
+   color: #FFFFFF;
+   text-transform: capitalize;
+   opacity: 1;
+ }
+
+ .toolbar .toolbar-text a{
+  color: rgb(9, 10, 9);
+    display: inline-block;
+ }
+
+ .toolbar .toolbar-text a:hover{
+  cursor: pointer;
+ }
+
+ .input{
+  width: 100%;
+ }
+
+ .book-logo{
+   margin-left: 40px;
+   top: 19px;
+   left: 164px;
+   width: 31px;
+   height: 24px;
+   background: transparent 0% 0% no-repeat padding-box;
+   opacity: 1;
+ }
+
+ .spacer{
+  flex: 1 1 auto;
+ }
+
+ .material-icons{
+  margin: 0px;
+  margin-right: auto;
+ }
+
+ /* .search-bar{
+  top: auto;
+  left: 334px;
+  width: auto;
+  height: 33px;
+  background: #FCFCFC 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  opacity: 1;
+ } */
+
+ /* .search {
+  background-color: #fff;
+  padding: 3px;
+  padding-left: 15px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+} */
+ .search .input{
+    background-color:#FFFFFF;
+    width: auto;
+    border: none;
+    border-color: #FFFFFF;
+    font-size: 18px;
+ }
+
+ button:focus {
+  outline: none;
+}
+
+ .second-header .navbar {
+    font-family: normal normal Lato;
+    text-align: center;
+    background-color: #f6f8f5;
+    margin-top: 10px;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+ }
+
+ .second-header .navbar a {
+    color: rgb(9, 10, 9);
+    display: inline-block;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+ }
+
+
+ .second-header .navbar a:hover{
+  background-color: #f64c72;
+  cursor: pointer;
+  /* text-decoration-style: solid; */
+ }
+ .circle {
+   vertical-align: middle;
+   margin-left: 8px;
+
+ }
+.dugmeProfil {
+  margin-left: 15px;
+  margin-right: 8px;
+}
+
+

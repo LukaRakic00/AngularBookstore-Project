@@ -1,0 +1,35 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav opened="true" style="position: fixed">
+    <mat-nav-list class = "sidenav" >
+      <a style="" mat-list-item routerLink="/" (click)="sidenav.close()">
+        <mat-icon style="vertical-align: middle" >home</mat-icon>
+        Home page
+      </a>
+
+      <a style="vertical-align: middle" mat-list-item routerLink="/registration" (click)="sidenav.close()">
+        <mat-icon style="vertical-align: middle">person</mat-icon>
+        Signup
+      </a>
+
+      <a style="vertical-align: middle" mat-list-item routerLink="/login" (click)="sidenav.close()">
+        <mat-icon style="vertical-align: middle">login</mat-icon>
+        Login
+      </a>
+
+
+    </mat-nav-list>
+  </mat-sidenav>
+    <app-navbar></app-navbar>
+    <router-outlet></router-outlet>
+</mat-sidenav-container>
+
+
+
+
+
+
+
+
+
+
+

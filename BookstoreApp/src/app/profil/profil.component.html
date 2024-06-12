@@ -1,0 +1,325 @@
+<div fxLayout="column">
+  <button mat-button [mat-dialog-close]="true">
+    <mat-icon>close</mat-icon>
+  </button>
+  <mat-dialog-content>
+    <mat-card>
+      <mat-card-title fxLayout="row">Name</mat-card-title>
+      <mat-card-content>
+
+        <div fxLayoutAlign="space-between center" *ngIf="!daLiSeImeEdituje">
+          <div fxFlex>{{podaciZaDijalog.korisnik.name}}</div>
+
+          <button mat-icon-button (click)="daLiSeImeEdituje=!daLiSeImeEdituje">
+            <mat-icon>
+              edit
+            </mat-icon>
+          </button>
+
+        </div>
+
+        <div *ngIf="daLiSeImeEdituje">
+          <form #forma4="ngForm" (ngSubmit)="potvrdiIme(forma4)">
+            <div fxLayout="row" fxLayoutAlign="space-between center">
+              <mat-form-field fxFlexAlign="end">
+                <input [(ngModel)]="this.korisnikZaEditovanje.name" type="text" placeholder="Name" name="name" matInput
+                       required>
+                <mat-hint #uspesno [ngStyle]="{color:'green'}" *ngIf="this.daLiJeImeIspravno">You have successfully
+                  replaced the name
+                </mat-hint>
+              </mat-form-field>
+
+              <div fxLayout="column">
+                <button mat-icon-button type="submit">
+                  <mat-icon>done</mat-icon>
+                </button>
+                <a mat-icon-button
+                   (click)="daLiSeImeEdituje=!daLiSeImeEdituje">
+                  <mat-icon>close</mat-icon>
+                </a>
+              </div>
+            </div>
+          </form>
+
+        </div>
+
+
+      </mat-card-content>
+    </mat-card>
+
+
+    <mat-card>
+      <mat-card-title fxLayout="row">Surname</mat-card-title>
+      <mat-card-content>
+
+        <div fxLayoutAlign="space-between center" *ngIf="!daLiSePrezimeEdituje">
+          <div fxFlex>{{podaciZaDijalog.korisnik.surname}}</div>
+
+          <button mat-icon-button (click)="daLiSePrezimeEdituje=!daLiSePrezimeEdituje">
+            <mat-icon>
+              edit
+            </mat-icon>
+          </button>
+
+        </div>
+
+        <div *ngIf="daLiSePrezimeEdituje">
+          <form #forma4="ngForm" (ngSubmit)="potvrdiPrezime(forma4)">
+            <div fxLayout="row" fxLayoutAlign="space-between center">
+              <mat-form-field fxFlexAlign="end">
+                <input [(ngModel)]="this.korisnikZaEditovanje.surname" type="text" placeholder="Surname" name="surname"
+                       matInput required>
+                <mat-hint #uspesno [ngStyle]="{color:'green'}" *ngIf="this.daLiJePrezimeIspravno">you have successfully
+                  replaced the surname
+                </mat-hint>
+              </mat-form-field>
+
+              <div fxLayout="column">
+                <button mat-icon-button type="submit">
+                  <mat-icon>done</mat-icon>
+                </button>
+                <a mat-icon-button
+                   (click)="daLiSePrezimeEdituje=!daLiSePrezimeEdituje">
+                  <mat-icon>close</mat-icon>
+                </a>
+              </div>
+            </div>
+          </form>
+
+        </div>
+
+
+      </mat-card-content>
+    </mat-card>
+
+
+    <mat-card>
+      <mat-card-title fxLayout="row">Phone</mat-card-title>
+      <mat-card-content>
+
+        <div fxLayoutAlign="space-between center" *ngIf="!daLiSeTelefonEdituje">
+          <div fxFlex>{{podaciZaDijalog.korisnik.phone}}</div>
+
+          <button mat-icon-button (click)="daLiSeTelefonEdituje=!daLiSeTelefonEdituje">
+            <mat-icon>
+              edit
+            </mat-icon>
+          </button>
+
+        </div>
+
+        <div *ngIf="daLiSeTelefonEdituje">
+          <form #forma4="ngForm" (ngSubmit)="potvrdiTelefon(forma4)">
+            <div fxLayout="row" fxLayoutAlign="space-between center">
+              <mat-form-field fxFlexAlign="end">
+                <input [(ngModel)]="this.korisnikZaEditovanje.phone" type="text" placeholder="Telefon" name="telefon"
+                       matInput required>
+                <mat-hint #uspesno [ngStyle]="{color:'green'}" *ngIf="this.daLiJeTelefonIspravan">you have successfully
+                  replaced the phone
+                </mat-hint>
+              </mat-form-field>
+
+              <div fxLayout="column">
+                <button mat-icon-button type="submit">
+                  <mat-icon>done</mat-icon>
+                </button>
+                <a mat-icon-button
+                   (click)="daLiSeTelefonEdituje=!daLiSeTelefonEdituje">
+                  <mat-icon>close</mat-icon>
+                </a>
+              </div>
+            </div>
+          </form>
+
+        </div>
+
+
+      </mat-card-content>
+    </mat-card>
+
+
+    <mat-card>
+      <mat-card-title>Address</mat-card-title>
+      <mat-card-content>
+
+        <div fxLayoutAlign="space-between center" *ngIf="!daLiSeAdresaEdituje">
+          <div fxFlex>{{podaciZaDijalog.korisnik.adresa}}</div>
+
+          <button mat-icon-button (click)="daLiSeAdresaEdituje=!daLiSeAdresaEdituje">
+            <mat-icon>
+              edit
+            </mat-icon>
+          </button>
+
+        </div>
+
+        <div *ngIf="daLiSeAdresaEdituje">
+          <form #forma4="ngForm" (ngSubmit)="potvrdiAdresu(forma4)">
+            <div fxLayout="row" fxLayoutAlign="space-between center">
+              <mat-form-field fxFlexAlign="end">
+                <input [(ngModel)]="this.korisnikZaEditovanje.address" type="text" placeholder="Address" name="address"
+                       matInput required>
+                <mat-hint #uspesno [ngStyle]="{color:'green'}" *ngIf="this.daLiJeAdresaIspravna">you have successfully
+                  replaced the address
+                </mat-hint>
+              </mat-form-field>
+
+              <div fxLayout="column">
+                <button mat-icon-button type="submit">
+                  <mat-icon>done</mat-icon>
+                </button>
+                <a mat-icon-button
+                   (click)="daLiSeAdresaEdituje=!daLiSeAdresaEdituje">
+                  <mat-icon>close</mat-icon>
+                </a>
+              </div>
+            </div>
+          </form>
+
+        </div>
+
+
+      </mat-card-content>
+    </mat-card>
+
+
+    <mat-card>
+      <mat-card-title>Email</mat-card-title>
+      <mat-card-content>
+
+        <div fxLayoutAlign="space-between center" *ngIf="!daLiSeEditujeMail">
+          <div fxFlex>{{podaciZaDijalog.korisnik.email}}</div>
+
+          <button mat-icon-button (click)="daLiSeEditujeMail=!daLiSeEditujeMail">
+            <mat-icon>
+              edit
+            </mat-icon>
+          </button>
+
+        </div>
+
+        <div *ngIf="daLiSeEditujeMail">
+          <form #forma="ngForm" (ngSubmit)="potvrdiMail(forma)">
+            <div fxLayout="row" fxLayoutAlign="space-between center">
+              <mat-form-field fxFlexAlign="end">
+                <input [(ngModel)]="korisnikZaEditovanje.email" type="text" placeholder="Email"
+                       name="email" matInput email #emailInput="ngModel" required>
+
+                <mat-error *ngIf="emailInput.hasError('required')">Polje za email ne sme biti
+                  prazno!
+                </mat-error>
+                <mat-error *ngIf="!emailInput.hasError('required')">Unesite email u ispravnom
+                  formatu!
+                </mat-error>
+                <mat-hint #uspesno [ngStyle]="{color:'green'}" *ngIf="this.daLiJeMailIspravan">Uspesno ste izmenili
+                  email
+                </mat-hint>
+
+              </mat-form-field>
+
+              <div fxLayout="column">
+                <button mat-icon-button type="submit">
+                  <mat-icon>done</mat-icon>
+                </button>
+                <a mat-icon-button
+                   (click)="daLiSeEditujeMail=!daLiSeEditujeMail">
+                  <mat-icon>close</mat-icon>
+                </a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card>
+      <mat-card-title>Password</mat-card-title>
+      <mat-card-content>
+        <div fxLayoutAlign="space-between center">
+          <mat-icon>
+            lock
+          </mat-icon>
+
+          <div *ngIf="!daLiSePasswordEdituje">
+            <button mat-icon-button (click)="daLiSePasswordEdituje=!daLiSePasswordEdituje">
+              <mat-icon>
+                edit
+              </mat-icon>
+            </button>
+          </div>
+        </div>
+
+        <div *ngIf="daLiSePasswordEdituje">
+          <form #forma2="ngForm" (ngSubmit)="potvrdiPassword(forma2)" fxLayout="row">
+            <mat-form-field fxFlexAlign="end">
+              <input [(ngModel)]="korisnikZaEditovanje.password" type="password" placeholder="Password"
+                     name="password" matInput password #passInput="ngModel" required minlength="8">
+              <mat-hint align="end">{{passInput.value.length}}/8</mat-hint>
+              <mat-hint *ngIf="this.daLiJePasswordIspravan" fxFlexAlign="end" [ngStyle]="{color:'green'}">Uspesno ste
+                izmenili password!
+              </mat-hint>
+            </mat-form-field>
+
+            <div fxLayout="column">
+              <button mat-icon-button type="submit">
+                <mat-icon>done</mat-icon>
+              </button>
+              <a mat-icon-button
+                 (click)="daLiSePasswordEdituje=!daLiSePasswordEdituje">
+                <mat-icon>close</mat-icon>
+              </a>
+            </div>
+          </form>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+
+    <mat-card>
+      <mat-card-title>Date of birth</mat-card-title>
+      <mat-card-content>
+        <div fxLayoutAlign="space-between center" *ngIf="!daLiSeDatumEdituje">
+          {{podaciZaDijalog.korisnik.date|date}}
+          <button mat-icon-button (click)="daLiSeDatumEdituje=!daLiSeDatumEdituje" *ngIf="!daLiSeDatumEdituje">
+            <mat-icon>
+              edit
+            </mat-icon>
+          </button>
+        </div>
+
+        <div *ngIf="daLiSeDatumEdituje">
+          <form #forma3="ngForm" (ngSubmit)="potvrdiDatum(forma3)" fxLayout="row">
+            <mat-form-field fxFlexAlign="end">
+
+              <input matInput
+                     [matDatepicker]="picker"
+                     required
+                     placeholder="Datum rodjenja"
+                     [(ngModel)]="korisnikZaEditovanje.date"
+                     name="datumRodjenja">
+              <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+              <mat-hint align="end">MM/DD/GGGG</mat-hint>
+
+            </mat-form-field>
+
+
+            <div fxLayout="column">
+              <button mat-icon-button type="submit">
+                <mat-icon>done</mat-icon>
+              </button>
+              <a mat-icon-button
+                 (click)="daLiSeDatumEdituje=!daLiSeDatumEdituje">
+                <mat-icon>close</mat-icon>
+              </a>
+            </div>
+          </form>
+        </div>
+
+      </mat-card-content>
+    </mat-card>
+
+
+  </mat-dialog-content>
+</div>
+

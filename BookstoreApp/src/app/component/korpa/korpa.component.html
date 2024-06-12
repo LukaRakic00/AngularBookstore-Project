@@ -1,0 +1,162 @@
+<!--<div fxLayoutAlign="column">
+    <div *ngFor="let element of this.korpaZaDijalog; let i=index">
+        <mat-card>
+            <mat-card-title>{{element.naziv}}</mat-card-title>
+            <mat-card-subtitle>{{element.zanr_domen}}</mat-card-subtitle>
+            <mat-card-content><img mat-card-image src="assets/slike/slikaKnjiga.jpg"></mat-card-content>
+            <mat-card-actions><button>Ukloni iz korpe</button></mat-card-actions>
+        </mat-card>
+    </div>
+
+</div>-->
+<section fxLayout="column" fxLayoutGap="10px">
+  <button mat-button [mat-dialog-close]="true" fxFlexAlign="end">
+    <mat-icon>close</mat-icon>
+  </button>
+
+
+  <table mat-table [dataSource]="this.podaciZaTabelu">
+
+    <ng-container matColumnDef="kolona">
+      <th mat-header-cell *matHeaderCellDef>
+        <div>Name</div>
+      </th>
+      <td mat-cell *matCellDef="let element ">
+        {{element.name}}
+      </td>
+
+    </ng-container>
+
+
+    <ng-container matColumnDef="kolona2">
+      <th mat-header-cell *matHeaderCellDef>
+        <div>Genre</div>
+      </th>
+      <td mat-cell *matCellDef="let element">
+        {{element.genre}}
+
+      </td>
+
+    </ng-container>
+
+    <ng-container matColumnDef="kolona3">
+      <th mat-header-cell *matHeaderCellDef>
+        <div>Number of pages</div>
+      </th>
+      <td mat-cell *matCellDef="let element">
+        {{element.numberOfPages}}
+
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="kolona4">
+      <th mat-header-cell *matHeaderCellDef>
+        <div>Publisher</div>
+      </th>
+      <td mat-cell *matCellDef="let element">
+        {{element.publisherName}}
+
+      </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="kolona5">
+      <th mat-header-cell *matHeaderCellDef>
+        <div>Release date</div>
+      </th>
+      <td mat-cell *matCellDef="let element">
+        {{element.releaseDate| date}}
+
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="kolona6">
+      <th mat-header-cell *matHeaderCellDef>
+        <div>Price</div>
+      </th>
+      <td mat-cell *matCellDef="let element">
+        {{element.price * element.quantity}}
+
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="kolona11">
+      <th mat-header-cell *matHeaderCellDef>
+        <div>Quantity</div>
+      </th>
+      <td mat-cell *matCellDef="let element">
+        <input matInput type="number" [(ngModel)]="this.element.quantity" class="kolicina" min="1"
+               *ngIf="element.status_narudzbine == 'otkazano' || element.status_narudzbine == 'u toku'">
+        <div *ngIf="element.status_narudzbine =='pristiglo'">{{element.quantity}}</div>
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="kolona8">
+
+      <th mat-header-cell *matHeaderCellDef>
+        <div>Rating</div>
+      </th>
+      <td mat-cell *matCellDef="let j=index; let element">
+        <rating  [max]="5" [(ngModel)]="element.rating" *ngIf="element.status_narudzbine =='pristiglo'"></rating>
+
+      </td>
+
+    </ng-container>
+
+    <ng-container matColumnDef="kolona9">
+      <th mat-header-cell *matHeaderCellDef>
+        <div>Status</div>
+      </th>
+      <td mat-cell *matCellDef="let element; let j = index">
+        <div>{{element.status_narudzbine}}</div>
+
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="kolona7">
+      <th mat-header-cell *matHeaderCellDef>
+
+      </th>
+      <td mat-cell *matCellDef="let element; let j = index;">
+        <button mat-raised-button (click)="this.uklanjanjeIzKorpe(j)"
+                [disabled]="element.status_narudzbine == 'u toku'">
+          <mat-icon>remove</mat-icon>
+          Remove from cart
+        </button>
+      </td>
+
+    </ng-container>
+
+    <ng-container matColumnDef="kolona10">
+      <th mat-header-cell *matHeaderCellDef>
+
+      </th>
+      <td mat-cell *matCellDef="let element; let j = index;">
+        <button mat-raised-button (click)="naruci(j)"
+                *ngIf="element.status_narudzbine=='u toku' || element.status_narudzbine =='otkazano'">Order
+        </button>
+      </td>
+    </ng-container>
+    <ng-container matColumnDef="ukupnaCena">
+      <td mat-footer-cell *matFooterCellDef>
+        Total amount: {{ukupnaCena()}}
+      </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="kolona12">
+      <th mat-header-cell *matHeaderCellDef>
+
+
+      </th>
+      <td mat-cell *matCellDef="let element;let j = index;">
+        <button mat-raised-button (click)="otkazi(j)" *ngIf="element.status_narudzbine == 'u toku'">Cancel</button>
+      </td>
+    </ng-container>
+
+
+    <tr mat-header-row *matHeaderRowDef="koloneZaPrikaz"></tr>
+    <tr mat-row *matRowDef="let row; columns: koloneZaPrikaz;"></tr>
+    <tr mat-footer-row *matFooterRowDef="['ukupnaCena']"></tr>
+  </table>
+
+
+</section>

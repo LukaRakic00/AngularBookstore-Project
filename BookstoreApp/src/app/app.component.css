@@ -1,0 +1,14 @@
+.sidenav {
+  width: 300px;
+  background-color:  #10a76d;
+}
+mat-sidenav {
+  background-color:  #10a76d;
+}
+mat-icon {
+  color: #f6f8f5;
+}
+mat-sidenav-container, mat-sidenav-content,mat-sidenav{
+  height: 100%;
+}
+

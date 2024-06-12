@@ -1,0 +1,54 @@
+<div class="toolbar">
+<mat-toolbar class="mat-elevation-z8" color="primary">
+  <!--<button mat-icon-button class="menu" [mat-menu-trigger-for]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu>
+    <menu routerLink="/addbooks" mat-menu-item>Add Book</menu>
+    <menu routerLink="/addbooks" mat-menu-item>Book List</menu>
+    <menu mat-menu-item routerLink="/account">Account</menu>
+  </mat-menu>-->
+  <img class="book-logo" id="book-logo" src="../assets/education.svg" routerLink="home-page">
+    <span  class="toolbar-text" routerLink="home-page" >Book Store</span>
+
+    <div class="spacer"></div>
+      <div class="search">
+        <a  (click)="filter($event)"><mat-icon style="vertical-align: middle; color:#FFFFFF">search</mat-icon></a>
+        <input #pretraga (keyup)="filter($event)" matInput placeholder="Search books"
+               type="text"
+        />
+    </div>
+    <div class="spacer"></div>
+    <a routerLink="login" mat-raised-button color="accent" style="vertical-align: middle; margin-right: 20px">Login
+      <mat-icon style="color: white; vertical-align: middle">login</mat-icon>
+    </a>
+
+    <a routerLink="registration" mat-raised-button color="accent" style="vertical-align: middle">Sign Up
+      <mat-icon style="color: white; vertical-align: middle">how_to_reg</mat-icon>
+    </a>
+
+    <a>
+      <button class="dugmeProfil" style=" vertical-align: middle" mat-mini-fab id="profilDugme" [matMenuTriggerFor]="menu2" *ngIf="this.servis.sesija==true">
+        <mat-icon class= "circle" style="color: white">person</mat-icon>
+      </button>
+      <div fxFlex fxLayoutAlign="end"  fxLayoutGap="20px" fxHide.xs>
+
+        <mat-menu #menu2>
+          <button mat-menu-item (click)="izmenaProfila()"><mat-icon>settings</mat-icon>Profile settings</button>
+          <button mat-menu-item (click)="otvoriKorpu()"><mat-icon>shopping_cart</mat-icon>Cart</button>
+          <button mat-menu-item (click)="this.servis.sesija = false" (click)="this.ruter.navigate(['/login'])" ><mat-icon>logout</mat-icon> Log out</button>
+        </mat-menu>
+      </div>
+    </a>
+</mat-toolbar>
+</div>
+<div class="second-header">
+<nav class="navbar" style="align-items: center;
+                               justify-content: center;">
+        <a routerLink= "/home-page" style="text-decoration: none;">Home</a>
+        <a style="text-decoration: none" href="https://sr.wikipedia.org/wiki/%D0%92%D1%83%D0%BB%D0%BA%D0%B0%D0%BD_%D0%B8%D0%B7%D0%B4%D0%B0%D0%B2%D0%B0%D1%88%D1%82%D0%B2%D0%BE">About Us</a>
+        <a style="text-decoration: none" href="https://www.knjizare-vulkan.rs/najcesca-pitanja">Contact Us</a>
+        <a style="text-decoration: none" href = "https://www.instagram.com/bookastore/?hl=en">Blog</a>
+</nav>
+</div>
+<router-outlet></router-outlet>

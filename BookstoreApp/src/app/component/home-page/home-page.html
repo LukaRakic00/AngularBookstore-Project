@@ -1,0 +1,61 @@
+<div fxLayout="column">
+
+  <table mat-table [dataSource]="podaciZaTabelu" matSort>
+
+    <ng-container matColumnDef="naziv">
+
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>
+
+
+      </th>
+
+      <td mat-cell *matCellDef="let element; let j=index">
+        <mat-card>
+
+          <mat-card-title>
+            {{element.name}}
+
+          </mat-card-title>
+
+          <mat-card-subtitle>
+            {{element.genre}}
+          </mat-card-subtitle>
+          <br>
+
+          <mat-card-content fxLayout="row" fxLayoutGap="15px">
+            <div>
+              <img id="slike" mat-card-image [src]="element.imgPath">
+            </div>
+
+            <div class="tekst" fxLayoutGap="20px" fxLayout="column">
+              <p><b>Number of pages:</b> {{element.numberOfPages}}</p>
+              <p><b>Publisher name:</b> {{element.publisherName}}</p>
+              <p><b>Release date:</b> {{element.releaseDate | date }}</p>
+              <p><b>Price:</b> {{element.price}} din.</p>
+              <p><b>User review:</b> {{element.userReview}}</p>
+            </div>
+
+
+          </mat-card-content>
+          <mat-card-actions *ngIf="this.servis2.sesija == true" fxFlexAlign="end">
+            <button mat-raised-button (click)="this.dodavanjeUKorpu(element.id)">Add to cart
+              <mat-icon>add</mat-icon>
+            </button>
+
+          </mat-card-actions>
+
+        </mat-card>
+        <br>
+      </td>
+
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="koloneZaPrikaz"></tr>
+    <tr mat-row *matRowDef="let row; columns: koloneZaPrikaz;"></tr>
+
+  </table>
+</div>
+
+<mat-paginator style="background-color: white" #paginator [pageSize]="5" [pageSizeOptions]="[1,2,5,10]"
+               fxFlexAlign="end"></mat-paginator>
+
+

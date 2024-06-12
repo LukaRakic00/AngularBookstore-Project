@@ -1,0 +1,56 @@
+<div class="bootstrap-wrapper">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+               <mat-card class="mat-elevation-z4" style="margin-top: 20px;">
+                <h1 style="text-align: center; color: white; background-color: #10a76d;">Login Here...</h1>
+                 <form #forma="ngForm"
+                       (ngSubmit)="onSubmit(forma)"
+                       fxLayoutAlign="end center"
+                       fxLayout="column"
+                       fxLayoutGap="20px"
+
+                 >
+                   <mat-form-field hintLabel="Enter your email" >
+                     <input ngModel
+                            type="text"
+                            placeholder="Email"
+                            name="email"
+                            matInput
+                            email
+                            #emailInput="ngModel"
+                            required>
+
+                     <mat-error *ngIf="emailInput.hasError('required')">The email field must not be empty!</mat-error>
+                     <mat-error *ngIf="!emailInput.hasError('required')">Please enter your email in the correct format!</mat-error>
+                   </mat-form-field>
+
+                   <mat-form-field hintLabel="Enter a minimum of 8 characters">
+                     <input ngModel
+                            type="password"
+                            placeholder="Password"
+                            name="password"
+                            matInput
+                            password
+                            #passInput="ngModel"
+                            required
+                            minlength="8">
+
+
+                     <mat-hint align="end">{{passInput.value.length}}/8</mat-hint>
+                   </mat-form-field>
+
+
+
+                   <button mat-raised-button type="submit" [disabled]="forma.invalid">Sign up</button>
+
+                   <mat-label *ngIf="daLiGreskaPostoji">{{tekstGreske}}</mat-label>
+
+                   <p fxLayout="column" fxLayoutAlign=" center">Do not have an account?<a routerLink="/registration">Register</a></p>
+
+                 </form>
+            </mat-card>
+            </div>
+        </div>
+    </div>
+</div>

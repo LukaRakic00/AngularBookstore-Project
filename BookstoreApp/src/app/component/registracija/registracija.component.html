@@ -1,0 +1,60 @@
+<div class="bootstrap-wrapper">
+<div class="container text-center">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <mat-card class="mat-elevation-z4" style="margin-top: 20px;">
+        <h1 style="text-align: center; color: white; background-color: #10a76d;">Register Here...</h1>
+
+<form #forma="ngForm" (ngSubmit)="onSubmit(forma)"
+      fxLayoutAlign="end center "
+      fxLayout="column"
+      fxLayoutGap="20px">
+
+    <mat-form-field appearance="outline" hintLabel="Enter your name">
+        <input ngModel type="text" placeholder="Name" name="name" matInput  required>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" hintLabel="Enter your surname">
+        <input ngModel type="text" placeholder="Surname" name="surname" matInput required>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" hintLabel="Enter your mobile phone number">
+        <input ngModel type="text" placeholder="Mobile phone number" name="phone" matInput required>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" hintLabel="Enter your home address">
+        <input ngModel type="text" placeholder="Address" name="address" matInput required>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" hintLabel="Enter your Email">
+        <input ngModel type="text" placeholder="Email" name="email" matInput email #emailInput="ngModel" required>
+        <mat-error *ngIf="emailInput.hasError('required')">The email field must not be empty!</mat-error>
+        <mat-error *ngIf="!emailInput.hasError('required')">Please enter your email in the correct format!
+        </mat-error>
+    </mat-form-field>
+
+
+
+    <mat-form-field appearance="outline" hintLabel="Enter a minimum of 8 characters">
+        <input ngModel type="password" placeholder="Password" name="password" matInput password #passInput="ngModel"
+            required minlength="8">
+        <mat-hint align="end">{{passInput.value.length}}/8</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline"  hintLabel="Enter your date of birth">
+
+        <input matInput [matDatepicker]="picker" required placeholder="Date of Birth" ngModel name="dateOfBirth">
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+        <mat-hint align="end">MM/DD/GGGG</mat-hint>
+
+    </mat-form-field>
+
+    <button  color="accent" mat-raised-button type="submit" [disabled]="forma.invalid">Register</button>
+    <mat-label *ngIf="daLiGreskaPostoji">{{tekstGreske}}</mat-label>
+    <p style="color: black" fxLayout="column" fxLayoutAlign=" center">Already created an account?<a routerLink="/login">Sign up</a></p>
+</form></mat-card>
+    </div>
+  </div>
+</div>
+</div>
