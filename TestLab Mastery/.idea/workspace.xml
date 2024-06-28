@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bc06a559-e9c4-4051-a810-fc4d961da319" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/rakic/testlab/example02/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/rakic/testlab/example02/ProductDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/rakic/testlab/example02/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/rakic/testlab/example02/Theatre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/rakic/testlab/example02/WordConcatenator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/com/rakic/testlab/example02/ProductServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/com/rakic/testlab/example02/TheatreClassTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/com/rakic/testlab/example02/WordConcatenatorTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="21S7NJdLghIM1gA80eZnZvpRNBw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.AircraftTest (1).executor": "Run",
+    "JUnit.AircraftTest.executor": "Run",
+    "JUnit.AircraftTest.testCalculateTripFuelRequired.executor": "Run",
+    "JUnit.BusPlusTest.calculateDiscountForPayingMultipleMonthsInAdvanceTestBV1.executor": "Run",
+    "JUnit.BusPlusTest.calculateDiscountForPayingMultipleMonthsInAdvanceTestBV2.executor": "Run",
+    "JUnit.BusPlusTest.calculateDiscountForPayingMultipleMonthsInAdvanceTestBV3.executor": "Run",
+    "JUnit.BusPlusTest.calculateDiscountForPayingMultipleMonthsInAdvanceTestBV4.executor": "Run",
+    "JUnit.BusPlusTest.calculateDiscountForPayingMultipleMonthsInAdvanceTestBV6.executor": "Run",
+    "JUnit.BusPlusTest.calculateDiscountForPayingMultipleMonthsInAdvanceTestLC1.executor": "Run",
+    "JUnit.BusPlusTest.calculateDiscountForPayingMultipleMonthsInAdvanceTestLC2.executor": "Run",
+    "JUnit.BusPlusTest.calculateDiscountForPayingMultipleMonthsInAdvanceTestLC3.executor": "Run",
+    "JUnit.BusPlusTest.calculateDiscountForPayingMultipleMonthsInAdvanceTestLC4.executor": "Run",
+    "JUnit.BusPlusTest.calculateDiscountForPayingMultipleMonthsInAdvanceTestLC5.executor": "Run",
+    "JUnit.BusPlusTest.testCalculateBusPlusSC1.executor": "Run",
+    "JUnit.BusPlusTest.testCalculateBusPlusSC2.executor": "Run",
+    "JUnit.BusPlusTest.testCalculateBusPlusSC3.executor": "Run",
+    "JUnit.BusPlusTest.testCalculateBusPlusSC4.executor": "Run",
+    "JUnit.BusPlusTestAsistentRadio.calculateDiscountForPayingMultipleMonthsInAdvanceTestBV10.executor": "Run",
+    "JUnit.BusPlusTestAsistentRadio.calculateDiscountForPayingMultipleMonthsInAdvanceTestBV3.executor": "Run",
+    "JUnit.BusPlusTestAsistentRadio.calculateDiscountForPayingMultipleMonthsInAdvanceTestBV4.executor": "Run",
+    "JUnit.BusPlusTestAsistentRadio.calculateDiscountForPayingMultipleMonthsInAdvanceTestBV5.executor": "Run",
+    "JUnit.BusPlusTestAsistentRadio.calculateDiscountForPayingMultipleMonthsInAdvanceTestBV6.executor": "Run",
+    "JUnit.BusPlusTestAsistentRadio.calculateDiscountForPayingMultipleMonthsInAdvanceTestBV7.executor": "Run",
+    "JUnit.BusPlusTestAsistentRadio.calculateDiscountForPayingMultipleMonthsInAdvanceTestBV8.executor": "Run",
+    "JUnit.BusPlusTestAsistentRadio.calculateDiscountForPayingMultipleMonthsInAdvanceTestBV9.executor": "Run",
+    "JUnit.BusPlusTestAsistentRadio.calculateDiscountForPayingMultipleMonthsInAdvanceTestLEC1.executor": "Run",
+    "JUnit.BusPlusTestAsistentRadio.calculateDiscountForPayingMultipleMonthsInAdvanceTestLEC2.executor": "Run",
+    "JUnit.BusPlusTestAsistentRadio.executor": "Run",
+    "JUnit.BusPlusTestAsistentRadio.testCalculateDiscountForPayingMultipleMonthsInAdvanceBVMinus1.executor": "Run",
+    "JUnit.ExamTestSuite.executor": "Run",
+    "JUnit.MathUtilsTest.executor": "Run",
+    "JUnit.MathUtilsTest.testAdd.executor": "Run",
+    "JUnit.ProductServiceTest.executor": "Run",
+    "JUnit.WordConcatenatorTest.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Windows User/Desktop/GITProjects/TestLab Mastery/test/com/rakic/testlab/example02",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.44712645",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.rakic.testlab.example02" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Windows User\Desktop\GITProjects\TestLab Mastery\test\com\rakic\testlab\example02" />
+      <recent name="C:\Users\Windows User\Desktop\GITProjects\TestLab Mastery\src\com\rakic\testlab\example02" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.rakic.testlab.example02" />
+      <recent name="com.rakic.testlab.example01" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.WordConcatenatorTest">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AircraftTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestLab Mastery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stqa.exam.preparation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="stqa.exam.preparation" />
+      <option name="MAIN_CLASS_NAME" value="stqa.exam.preparation.AircraftTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AircraftTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestLab Mastery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rakic.testlab.example01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rakic.testlab.example01" />
+      <option name="MAIN_CLASS_NAME" value="com.rakic.testlab.example01.AircraftTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExamTestSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestLab Mastery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stqa.exam.preparation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="stqa.exam.preparation" />
+      <option name="MAIN_CLASS_NAME" value="stqa.exam.preparation.ExamTestSuite" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestLab Mastery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rakic.testlab.example02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rakic.testlab.example02" />
+      <option name="MAIN_CLASS_NAME" value="com.rakic.testlab.example02.ProductServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordConcatenatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestLab Mastery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rakic.testlab.example02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.rakic.testlab.example02" />
+      <option name="MAIN_CLASS_NAME" value="com.rakic.testlab.example02.WordConcatenatorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.WordConcatenatorTest" />
+        <item itemvalue="JUnit.ProductServiceTest" />
+        <item itemvalue="JUnit.AircraftTest (1)" />
+        <item itemvalue="JUnit.AircraftTest" />
+        <item itemvalue="JUnit.ExamTestSuite" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bc06a559-e9c4-4051-a810-fc4d961da319" name="Default Changelist" comment="" />
+      <created>1637922593700</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637922593700</updated>
+      <workItem from="1637922595204" duration="2544000" />
+      <workItem from="1637931783532" duration="2499000" />
+      <workItem from="1672243300623" duration="222000" />
+      <workItem from="1674589669896" duration="72000" />
+      <workItem from="1685437604428" duration="2432000" />
+      <workItem from="1685442305108" duration="1267000" />
+      <workItem from="1718016389640" duration="18654000" />
+      <workItem from="1718100944947" duration="31000" />
+      <workItem from="1719583717279" duration="433000" />
+      <workItem from="1719584630704" duration="1700000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
