@@ -24,3 +24,7 @@ The **Angular Bookstore Project** is designed to offer a smooth and intuitive sh
 - **RxJS**: For handling asynchronous data streams.
 - **Node.js & Express**: Backend services to handle API requests (if applicable).
 - **Angular Router**: For navigation between different views of the application.
+
+## **App Screenshot**
+
+![Food Next App Screenshot](./food.webp)
