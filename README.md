@@ -27,4 +27,4 @@ The **Angular Bookstore Project** is designed to offer a smooth and intuitive sh
 
 ## **App Screenshot**
 
-![Book Angular App Screenshot](./bood.webp)
+![Book Angular App Screenshot](./book.webp)
